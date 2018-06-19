@@ -14,25 +14,29 @@ submodules, and we'll be making a new one of those today.
 
 ### make a directory to hold everything
 
-Create a directory in `~/journal/content/` to hold the tutorials in one nice location.
+Create a directory in `~/journal-hugo/content/` to hold the tutorials in one nice location.
 
-    $ cd content/
-    $ mkdir toots
+    cd content/
+    mkdir toots
 
 ### make a repository to hold the new page
 
-You should make repositories for every text file you care about.
+You should make repositories for every text file you care about.  In this case, do not make it in ~/journal-hugo/content/toots because that is where the submodule will be.  Just make it in ~/whatever
+
+    git remote add origin git@github.com:thunderrabbit/add-tutorial-to-a-hugo-site.git
+    git push origin master
 
 http://lmgtfy.com/?q=get+started+with+git to get started
 
 ### add the new repository as a submodule
 
-    $ git submodule add git@github.com:thunderrabbit/add-tutorial-to-a-hugo-site.git content/toots/add-tutorial-to-hugo-site
+    cd ~/journal-hugo/
+    git submodule add git@github.com:thunderrabbit/add-tutorial-to-a-hugo-site.git content/toots/add-tutorial-to-hugo-site
 
 ### add content to the repository
 
-    $ cd toots/add-tutorial-to-hugo-site/
-	$ nano index.md
+    cd toots/add-tutorial-to-hugo-site/
+	nano index.md
 
 ### Add your page content to index.md
 
