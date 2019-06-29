@@ -1,6 +1,6 @@
 ---
 title: one way to create new pages in hugo
-tags: tutorials
+tags: [ "tutorials" ]
 author: Rob Nugen
 date: 2015-12-06T19:14:40+09:00
 ---
@@ -44,7 +44,7 @@ Edit `index.md` with your favorite text editor, and start with the YAML meta dat
 
     ---
     title: one way to create new pages in hugo
-    tags: tutorials
+    tags: [ "tutorials" ]
     author: Rob Nugen
     date: 2015-12-06T19:14:40+09:00
     ---
